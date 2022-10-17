@@ -50,9 +50,6 @@ table {
 
 body {
   font-family: 'aSandeulbaram', 'Nanum Gothic', '맑은 고딕', 'Noto Sans KR', 'Apple SD Gothic', 'sans-serif';
-}
-
-body {
   background-color: white;
 }
 
@@ -79,11 +76,11 @@ body {
 }
 
 #main-desc > h1 {
-  font-size: 5em;
+  font-size: 5rem;
 }
 
 #main-desc > h2 {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 #main-download {
@@ -95,7 +92,7 @@ body {
 #main-ver {
   background-color: #000;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.1rem;
   padding: 12px 15px;
   border-radius: 20px 20px 0 0;
 }
