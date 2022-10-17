@@ -50,38 +50,42 @@ table {
 
 body {
   font-family: 'aSandeulbaram', 'Nanum Gothic', '맑은 고딕', 'Noto Sans KR', 'Apple SD Gothic', 'sans-serif';
+  width: 100vw;
+  height: 100vh;
   background-color: white;
 }
 
 #container {
   width: 1080px;
-  max-width: 100%;
+  max-width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 10vh auto;
+  gap: min(7vh, 100px);
+  margin: 0 auto;
+  --width: min(1080px, 100vw);
 }
 
 #logo {
-  width: 60%;
+  width: 50%;
   max-width: 500px;
-  margin-bottom: 60px;
 }
 
 #main-desc {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
-  margin-bottom: 120px;
+  gap: min(3vh, 30px);
 }
 
 #main-desc > h1 {
-  font-size: max(3.2vw, 40px);
+  font-size: calc(var(--width) * 0.08);
 }
 
 #main-desc > h2 {
-  font-size: max(2vw, 18px);
+  font-size: calc(var(--width) * 0.04);
 }
 
 #main-download {
@@ -93,25 +97,28 @@ body {
 #main-ver {
   background-color: #000;
   color: #fff;
-  font-size: max(1vw, 14px);
-  padding: 12px 15px;
-  border-radius: 20px 20px 0 0;
+  font-size: calc(var(--width) * 0.02);
+  padding: calc(var(--width) * 0.015);
+  padding-bottom: calc(var(--width) * 0.01);
+  border-radius: calc(var(--width) * 0.02);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 #main-link {
   display: flex;
-  gap: 30px;
-  padding-top: 20px;
+  gap: calc(var(--width) * 0.03);
+  padding-top: calc(var(--width) * 0.02);
   border-top: solid 1px #000;
 }
 
 #main-link a {
-  width: 60px;
-  height: 60px;
+  width: calc(var(--width) * 0.05);
+  height: calc(var(--width) * 0.05);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px;
+  padding: calc(var(--width) * 0.025);
   border: solid 2px #e4e4e4;
   border-radius: 40%;
   box-shadow: 10px 10px 10px #0001;
@@ -123,9 +130,9 @@ body {
 }
 
 #logo-ps {
-  margin-left: 5px;
+  margin-left: calc(var(--width) * 0.005);
 }
 
 #logo-as {
-  margin-top: -5px;
+  margin-top: calc(var(--width) * -0.005);
 }
