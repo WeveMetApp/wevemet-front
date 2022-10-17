@@ -50,34 +50,31 @@ table {
 
 body {
   font-family: 'aSandeulbaram', 'Nanum Gothic', '맑은 고딕', 'Noto Sans KR', 'Apple SD Gothic', 'sans-serif';
-  width: 100vw;
-  height: 100vh;
   background-color: white;
+  --width: min(100vw, 100vh, 1920px);
 }
 
 #container {
-  width: 1080px;
-  max-width: 100vw;
-  height: 100vh;
+  width: var(--width);
+  min-height: 86vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: min(7vh, 100px);
+  gap: calc(var(--width) * 0.01);
+  padding: calc(var(--width) * 0.007) 0;
   margin: 0 auto;
-  --width: min(1080px, 100vw);
 }
 
 #logo {
-  width: 50%;
-  max-width: 500px;
+  width: min(60%, 60vh, 500px);
 }
 
 #main-desc {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: min(3vh, 30px);
+  gap: calc(var(--width) * 0.03);
 }
 
 #main-desc > h1 {
