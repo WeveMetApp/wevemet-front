@@ -51,23 +51,23 @@ table {
 body {
   font-family: 'aSandeulbaram', 'Nanum Gothic', '맑은 고딕', 'Noto Sans KR', 'Apple SD Gothic', 'sans-serif';
   background-color: white;
+  height: calc(100 * var(--vh, 1vh));
   user-select: none;
   -ms-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
-  --width: min(100vw, calc(100 * var(--vh, 1vh)), 1080px);
+  --width: min(100vw, calc(80 * var(--vh, 1vh)), 1080px);
 }
 
 #container {
   width: var(--width);
-  height: calc(80 * var(--vh, 1vh));
+  height: calc(100 * var(--vh, 1vh));
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: calc(10 * var(--vh, 1vh));
-  padding: calc(5 * var(--vh, 1vh)) 0;
   margin: 0 auto;
 }
 
