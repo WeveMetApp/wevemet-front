@@ -94,6 +94,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: calc(3 * var(--vh, 1vh));
 }
 
 #main-ver {
