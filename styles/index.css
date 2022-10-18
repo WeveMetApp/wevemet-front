@@ -61,7 +61,7 @@ body {
 
 #container {
   width: var(--width);
-  min-height: calc(80 * var(--vh, 1vh));
+  height: calc(80 * var(--vh, 1vh));
   display: flex;
   flex-direction: column;
   justify-content: center;
