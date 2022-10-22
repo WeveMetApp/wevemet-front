@@ -51,77 +51,77 @@ table {
 body {
   font-family: 'aSandeulbaram', 'Nanum Gothic', '맑은 고딕', 'Noto Sans KR', 'Apple SD Gothic', 'sans-serif';
   background-color: white;
-  height: calc(100 * var(--vh, 1vh));
+  height: calc(100 * var(--vh));
   user-select: none;
   -ms-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
-  --width: min(100vw, calc(80 * var(--vh, 1vh)), 1080px);
+  --vp: min(calc(var(--vw, 1vw)), var(--vh, 1vh), 10px);
 }
 
 #container {
-  width: var(--width);
-  height: calc(100 * var(--vh, 1vh));
+  width: calc(100 * var(--vp));
+  height: calc(100 * var(--vh));
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: calc(6 * var(--vh, 1vh));
+  gap: calc(6 * var(--vh));
   margin: 0 auto;
 }
 
 #logo {
-  width: calc(var(--width) * 0.5);
+  width: calc(50 * var(--vp));
 }
 
 #main-desc {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: calc(2 * var(--vh, 1vh));
+  gap: calc(2 * var(--vp));
 }
 
 #main-desc > h1 {
-  font-size: calc(var(--width) * 0.08);
+  font-size: calc(8 * var(--vp));
 }
 
 #main-desc > h2 {
-  font-size: calc(var(--width) * 0.04);
+  font-size: calc(4 * var(--vp));
 }
 
 #main-download {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: calc(3 * var(--vh, 1vh));
+  margin-top: calc(3 * var(--vh));
 }
 
 #main-ver {
   background-color: #000;
   color: #fff;
-  font-size: calc(var(--width) * 0.02);
-  padding: calc(var(--width) * 0.015);
-  padding-bottom: calc(var(--width) * 0.01);
-  border-radius: calc(var(--width) * 0.02);
+  font-size: calc(2 * var(--vp));
+  padding: calc(1.5 * var(--vp));
+  padding-bottom: calc(1 * var(--vp));
+  border-radius: calc(2 * var(--vp));
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 #main-link {
   display: flex;
-  gap: calc(var(--width) * 0.03);
-  padding-top: calc(2 * var(--vh, 1vh));
+  gap: calc(3 * var(--vp));
+  padding-top: calc(2 * var(--vh));
   border-top: solid 1px #000;
 }
 
 #main-link a {
-  width: calc(var(--width) * 0.055);
-  height: calc(var(--width) * 0.055);
+  width: calc(5.5 * var(--vp));
+  height: calc(5.5 * var(--vp));
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: calc(var(--width) * 0.025);
+  padding: calc(2.5 * var(--vp));
   border: solid 2px #e4e4e4;
   border-radius: 40%;
   box-shadow: 10px 10px 10px #0001;
@@ -133,9 +133,9 @@ body {
 }
 
 #logo-ps {
-  margin-left: calc(var(--width) * 0.005);
+  margin-left: calc(1 * var(--vp));
 }
 
 #logo-as {
-  margin-top: calc(var(--width) * -0.005);
+  margin-top: calc(-1 * var(--vp));
 }

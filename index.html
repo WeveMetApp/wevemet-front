@@ -13,7 +13,7 @@
 </head>
 <body>
   <div id="container">
-    <img id="logo" src="./assets/images/logo.png" alt="We've Met Logo">
+    <img id="logo" src="./assets/images/logo.svg" alt="We've Met Logo">
     <div id="main-desc">
       <h1>우리 만났네요!</h1>
       <h2>소통을 시작합시다.</h2>
@@ -24,17 +24,17 @@
       </div>
       <div id="main-link">
         <a id="main-link-ps" href="">
-          <img id="logo-ps" src="./assets/images/playStore.png" alt="Play Store">
+          <img id="logo-ps" src="./assets/images/playStore.svg" alt="Play Store">
         </a>
         <a id="main-link-as" href="">
-          <img id="logo-as" src="./assets/images/appStore.png" alt="App Store">
+          <img id="logo-as" src="./assets/images/appStore.svg" alt="App Store">
         </a>
       </div>
     </div>
   </div>
   <script>
     document.documentElement.style.setProperty("--vh", `${window.innerHeight * 0.01}px`);
-    addEventListener("resize", () => {document.documentElement.style.setProperty("--vh", `${window.innerHeight * 0.01}px`);});
+    document.documentElement.style.setProperty("--vw", `${window.innerWidth * 0.01}px`);
   </script>
 </body>
 </html>
