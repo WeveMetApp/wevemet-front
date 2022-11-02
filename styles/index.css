@@ -75,19 +75,8 @@ body {
   width: calc(50 * var(--vp));
 }
 
-#main-desc {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: calc(2 * var(--vp));
-}
-
-#main-desc > h1 {
-  font-size: calc(8 * var(--vp));
-}
-
-#main-desc > h2 {
-  font-size: calc(4 * var(--vp));
+#welcome-message {
+  width: calc(50 * var(--vp));
 }
 
 #main-download {
