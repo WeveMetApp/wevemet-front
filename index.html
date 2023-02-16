@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <title>We've Met</title>
   <meta charset="UTF-8">
@@ -11,27 +12,40 @@
   <link rel="icon" href="./assets/images/favicon.ico">
   <link rel="stylesheet" href="./styles/index.css">
 </head>
+
 <body>
-  <div id="container">
+  <main>
     <img id="logo" src="./assets/images/logo.svg" alt="We've Met Logo">
-    <img id="welcome-message" src="./assets/images/welcomeMessage.svg" alt="우리 만났네요! 소통을 시작합시다.">
-    <div id="main-download">
-      <div id="main-ver">
-        <span>BETA</span>
+    <img id="welcome-message" src="./assets/images/welcome_message.svg" alt="우리 만났네요! 소통을 시작합시다.">
+    <div id="link-area">
+      <div id="version">
+        <img id="version-info" src="./assets/images/beta.svg" alt="Beta">
       </div>
-      <div id="main-link">
-        <a id="main-link-ps" href="">
-          <img id="logo-ps" src="./assets/images/playStore.svg" alt="Play Store">
+      <div id="link-wrapper">
+        <a class="service-link" href="https://forms.gle/5rFaC72LSr8dzk6r7">
+          <img id="logo-playstore" src="./assets/images/play_store.svg" alt="Play Store">
         </a>
-        <a id="main-link-as" href="">
-          <img id="logo-as" src="./assets/images/appStore.svg" alt="App Store">
+        <a class="service-link" href="https://forms.gle/5rFaC72LSr8dzk6r7">
+          <img id="logo-appstore" src="./assets/images/app_store.svg" alt="App Store">
+        </a>
+        <a class="service-link" href="https://youtu.be/FmLTsLc5HFY">
+          <img id="logo-youtube" src="./assets/images/youtube.svg" alt="Promotion video">
+        </a>
+        <a class="service-link" href="https://drive.google.com/file/d/1GEI9MLO9jXRjFH0gcY_9PgbFHuSJRuri/view?usp=share_link">
+          <img id="logo-manual" src="./assets/images/manual.svg" alt="User manual">
         </a>
       </div>
     </div>
-  </div>
-  <script>
-    document.documentElement.style.setProperty("--vh", `${window.innerHeight * 0.01}px`);
-    document.documentElement.style.setProperty("--vw", `${window.innerWidth * 0.01}px`);
-  </script>
+  </main>
+  <footer>
+    <span id="copyright">© Technometrics, Inc. All rights reserved.</span>
+    <div id="terms-wrapper">
+      <a class="terms" href="./terms/service.html">서비스이용약관</a>
+      <a class="terms" href="./terms/location.html">위치기반서비스이용약관</a>
+      <a class="terms" href="./terms/privacy-policy.html">개인정보처리방침</a>
+      <a class="terms" href="">운영정책</a>
+    </div>
+  </footer>
 </body>
+
 </html>
